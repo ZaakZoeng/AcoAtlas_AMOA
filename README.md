@@ -1,2 +1,2 @@
-# AcoAtlas_AMTA
-Aurelia coerulea Multidimensional Transcriptomic Atlas
+# AcoAtlas_AMOA
+Aurelia coerulea Multi-Omics Atlas
