@@ -10,29 +10,29 @@ const router = createRouter({
       component: Home,
     },
     {
-      path: "/components",
-      name: "components",
-      component: () => import("../views/Components.vue"),
+      path: "/genome",
+      name: "genome",
+      component: () => import("../views/Genome.vue"),
     },
     {
-      path: "/search",
-      name: "search",
-      component: () => import("../views/Search.vue"),
+      path: "/transcriptome",
+      name: "transcriptome",
+      component: () => import("../views/Transcriptome.vue"),
     },
     {
-      path: "/statistics",
-      name: "statistics",
-      component: () => import("../views/Statistics.vue"),
+      path: "/communication",
+      name: "communication",
+      component: () => import("../views/Communication.vue"),
+    },
+    {
+      path: "/cross-species",
+      name: "cross-species",
+      component: () => import("../views/CrossSpecies.vue"),
     },
     {
       path: "/download",
       name: "download",
       component: () => import("../views/Download.vue"),
-    },
-    {
-      path: "/about",
-      name: "about",
-      component: () => import("../views/About.vue"),
     }
   ],
 });

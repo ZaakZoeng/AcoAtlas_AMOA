@@ -24,9 +24,9 @@ onMounted(() => {
       <el-col :span="20">
         <el-row>
           <el-col class="wrapper-sketch-text" :span="screenWidth > 1200 ? 14 : 24">
-            <div class="wrapper-sketch-text-title">About</div>
-            <div class="wrapper-sketch-text-subtitle">The Page of About</div>
-            <h1 class="wrapper-sketch-text-content">You can contact me.</h1>
+            <div class="wrapper-sketch-text-title">Download</div>
+            <div class="wrapper-sketch-text-subtitle">The Page of Download</div>
+            <h1 class="wrapper-sketch-text-content">You can download data here.</h1>
           </el-col>
         </el-row>
       </el-col>

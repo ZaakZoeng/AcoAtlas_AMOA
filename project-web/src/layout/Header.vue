@@ -27,12 +27,35 @@ const isDark = ref(useDark());
           </a>
         </div>
         <div class="header-menu-flex-grow"></div>
-        <el-menu-item index="/">Home</el-menu-item>
-        <el-menu-item index="/components">Components</el-menu-item>
-        <el-menu-item index="/search">Search</el-menu-item>
-        <el-menu-item index="/statistics">Statistics</el-menu-item>
-        <el-menu-item index="/download">Download</el-menu-item>
-        <el-menu-item index="/about">About</el-menu-item>
+        <el-menu-item index="/">
+          <font-awesome-icon :icon="['fas', 'bars']" class="menu-icon" />
+          <span>Home</span>
+        </el-menu-item>
+
+        <el-menu-item index="/genome">
+          <font-awesome-icon :icon="['fas', 'dna']" class="menu-icon" />
+          <span>Genome</span>
+        </el-menu-item>
+
+        <el-menu-item index="/transcriptome">
+          <font-awesome-icon :icon="['fas', 'book']" class="menu-icon" />
+          <span>Transcriptome</span>
+        </el-menu-item>
+
+        <el-menu-item index="/communication">
+          <font-awesome-icon :icon="['fas', 'link']" class="menu-icon" />
+          <span>Communication</span>
+        </el-menu-item>
+
+        <el-menu-item index="/cross-species">
+          <font-awesome-icon :icon="['fas', 'arrows']" class="menu-icon" />
+          <span>Cross-Species</span>
+        </el-menu-item>
+
+        <el-menu-item index="/download">
+          <font-awesome-icon :icon="['fas', 'download']" class="menu-icon" />
+          <span>Download</span>
+        </el-menu-item>
         <div class="header-menu-item-flex">
           <el-switch v-model="isDark" inline-prompt :active-icon="Moon" :inactive-icon="Sunny" active-color="#303030"
             inactive-color="#909399" border-color="#D4D7DE" />
@@ -53,12 +76,35 @@ const isDark = ref(useDark());
         <div class="header-menu-flex-grow"></div>
         <el-sub-menu>
           <template #title><font-awesome-icon :icon="['fas', 'bars']" /></template>
-          <el-menu-item index="/">Home</el-menu-item>
-          <el-menu-item index="/components">Components</el-menu-item>
-          <el-menu-item index="/search">Search</el-menu-item>
-          <el-menu-item index="/statistics">Statistics</el-menu-item>
-          <el-menu-item index="/download">Download</el-menu-item>
-          <el-menu-item index="/about">About</el-menu-item>
+          <el-menu-item index="/">
+            <font-awesome-icon :icon="['fas', 'bars']" class="menu-icon" />
+            <span>Home</span>
+          </el-menu-item>
+
+          <el-menu-item index="/genome">
+            <font-awesome-icon :icon="['fas', 'dna']" class="menu-icon" />
+            <span>Genome</span>
+          </el-menu-item>
+
+          <el-menu-item index="/transcriptome">
+            <font-awesome-icon :icon="['fas', 'book']" class="menu-icon" />
+            <span>Transcriptome</span>
+          </el-menu-item>
+
+          <el-menu-item index="/communication">
+            <font-awesome-icon :icon="['fas', 'link']" class="menu-icon" />
+            <span>Communication</span>
+          </el-menu-item>
+
+          <el-menu-item index="/cross-species">
+            <font-awesome-icon :icon="['fas', 'arrows']" class="menu-icon" />
+            <span>Cross-Species</span>
+          </el-menu-item>
+
+          <el-menu-item index="/download">
+            <font-awesome-icon :icon="['fas', 'download']" class="menu-icon" />
+            <span>Download</span>
+          </el-menu-item>
         </el-sub-menu>
         <div class="header-menu-item-flex">
           <el-switch v-model="isDark" inline-prompt :active-icon="Moon" :inactive-icon="Sunny" active-color="#303030"
@@ -104,6 +150,18 @@ const isDark = ref(useDark());
 
 .header-menu-flex-grow {
   flex-grow: 1;
+}
+
+.menu-icon {
+  margin-right: 8px; /* 图标与文字的间距 */
+  font-size: 1.1em;   /* 稍微调整图标大小使其与文字和谐 */
+  vertical-align: middle;
+}
+
+/* 针对 Element Plus 菜单项的微调 */
+.el-menu-item {
+  display: flex;
+  align-items: center;
 }
 
 /* 导航栏每个item的样式 */
