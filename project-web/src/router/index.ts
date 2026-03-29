@@ -10,6 +10,11 @@ const router = createRouter({
       component: Home,
     },
     {
+      path: "/gsp-cryo",
+      name: "gsp-cryo",
+      component: () => import("../views/GSPCryo.vue"),
+    },
+    {
       path: "/genome",
       name: "genome",
       component: () => import("../views/Genome.vue"),
@@ -18,11 +23,6 @@ const router = createRouter({
       path: "/transcriptome",
       name: "transcriptome",
       component: () => import("../views/Transcriptome.vue"),
-    },
-    {
-      path: "/communication",
-      name: "communication",
-      component: () => import("../views/Communication.vue"),
     },
     {
       path: "/cross-species",

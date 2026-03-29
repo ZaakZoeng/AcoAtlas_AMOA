@@ -32,6 +32,11 @@ const isDark = ref(useDark());
           <span>Home</span>
         </el-menu-item>
 
+        <el-menu-item index="/gsp-cryo">
+          <font-awesome-icon :icon="['fas', 'microscope']" class="menu-icon" />
+          <span>GSP-Cryo</span>
+        </el-menu-item>
+
         <el-menu-item index="/genome">
           <font-awesome-icon :icon="['fas', 'dna']" class="menu-icon" />
           <span>Genome</span>
@@ -40,11 +45,6 @@ const isDark = ref(useDark());
         <el-menu-item index="/transcriptome">
           <font-awesome-icon :icon="['fas', 'book']" class="menu-icon" />
           <span>Transcriptome</span>
-        </el-menu-item>
-
-        <el-menu-item index="/communication">
-          <font-awesome-icon :icon="['fas', 'link']" class="menu-icon" />
-          <span>Communication</span>
         </el-menu-item>
 
         <el-menu-item index="/cross-species">
@@ -81,6 +81,11 @@ const isDark = ref(useDark());
             <span>Home</span>
           </el-menu-item>
 
+          <el-menu-item index="/gsp-cryo">
+            <font-awesome-icon :icon="['fas', 'microscope']" class="menu-icon" />
+            <span>GSP-Cryo</span>
+          </el-menu-item>
+
           <el-menu-item index="/genome">
             <font-awesome-icon :icon="['fas', 'dna']" class="menu-icon" />
             <span>Genome</span>
@@ -89,11 +94,6 @@ const isDark = ref(useDark());
           <el-menu-item index="/transcriptome">
             <font-awesome-icon :icon="['fas', 'book']" class="menu-icon" />
             <span>Transcriptome</span>
-          </el-menu-item>
-
-          <el-menu-item index="/communication">
-            <font-awesome-icon :icon="['fas', 'link']" class="menu-icon" />
-            <span>Communication</span>
           </el-menu-item>
 
           <el-menu-item index="/cross-species">
