@@ -30,6 +30,11 @@ const router = createRouter({
       component: () => import("../views/CrossSpecies.vue"),
     },
     {
+      path: "/pathway",
+      name: "pathway",
+      component: () => import("../views/Pathway.vue"),
+    },
+    {
       path: "/download",
       name: "download",
       component: () => import("../views/Download.vue"),

@@ -40,22 +40,22 @@ const handleDownload = async (fileName: string) => {
   try {
     // 根据您的项目配置，API 基础路径可能为 /api 或 /FACdb-api
     const downloadUrl = `/api/download/${fileName}`;
-    
+
     // 使用 fetch 获取流，能更好地处理大文件并支持 Loading 效果
     const response = await fetch(downloadUrl);
-    
+
     if (!response.ok) throw new Error('File not found or server error');
 
     const blob = await response.blob();
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = fileName; 
+    a.download = fileName;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
     window.URL.revokeObjectURL(url);
-    
+
     ElMessage.success(`${fileName} download started.`);
   } catch (error) {
     console.error("Download failed:", error);
@@ -79,8 +79,7 @@ const openLink = (url: string) => {
             <div class="wrapper-sketch-text-title">Download</div>
             <div class="wrapper-sketch-text-subtitle">Data Resource Center</div>
             <h1 class="wrapper-sketch-text-content">
-              Access chromosome-level genome, single-cell, and spatial transcriptomics datasets.
-            </h1>
+              Access Comprehensive Datasets and Bioinformatics Resources for this study </h1>
           </el-col>
         </el-row>
       </el-col>
@@ -92,8 +91,8 @@ const openLink = (url: string) => {
     <el-col :span="2"></el-col>
     <el-col :span="20">
       <div class="download-section">
-        
-        <el-card class="data-card" shadow="hover">
+
+        <el-card hidden class="data-card" shadow="hover">
           <template #header>
             <div class="card-header">
               <font-awesome-icon :icon="['fas', 'download']" class="icon-margin" />

@@ -55,7 +55,7 @@ onMounted(() => {
         
         <div class="footer-wrap-flex-grow"></div>
         <div class="footer-wrap-text">
-          <div>© {{ currentYear }}. Powered by <a href="https://zaakzoeng.github.io/" target="_blank">Ze Zhang</a></div>
+          <div>© 2024 - {{ currentYear }}. Powered by <a href="https://zaakzoeng.github.io/" target="_blank">Ze Zhang</a></div>
         </div>
       </el-menu>
 
@@ -71,7 +71,7 @@ onMounted(() => {
         <div ref="mobileGlobeContainer" class="mobile-globe-box"></div>
 
         <div class="mobile-footer-wrap-text">
-          <div>© {{ currentYear }}. Powered by <a href="https://zaakzoeng.github.io/" target="_blank">Ze Zhang</a></div>
+          <div>© 2024 - {{ currentYear }}. Powered by <a href="https://zaakzoeng.github.io/" target="_blank">Ze Zhang</a></div>
         </div>
       </div>
     </el-col>
@@ -113,6 +113,17 @@ onMounted(() => {
   flex-direction: column;
   justify-content: space-around;
 }
+.footer-wrap-text a {
+  color: #409EFF;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.footer-wrap-text a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
 
 .mobile-footer-wrap {
   padding: 50px 0;
@@ -121,6 +132,17 @@ onMounted(() => {
 
 .mobile-footer-wrap-text {
   margin: 25px 0 0 0;
+}
+
+.mobile-footer-wrap-text a {
+  color: #409EFF;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.mobile-footer-wrap-text a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 680px) {

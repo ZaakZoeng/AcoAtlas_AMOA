@@ -52,6 +52,11 @@ const isDark = ref(useDark());
           <span>Cross-Species</span>
         </el-menu-item>
 
+        <el-menu-item index="/pathway">
+          <font-awesome-icon :icon="['fas', 'wave-square']" class="menu-icon" />
+          <span>Pathway</span>
+        </el-menu-item>
+
         <el-menu-item index="/download">
           <font-awesome-icon :icon="['fas', 'download']" class="menu-icon" />
           <span>Download</span>
@@ -99,6 +104,11 @@ const isDark = ref(useDark());
           <el-menu-item index="/cross-species">
             <font-awesome-icon :icon="['fas', 'arrows']" class="menu-icon" />
             <span>Cross-Species</span>
+          </el-menu-item>
+
+          <el-menu-item index="/pathway">
+            <font-awesome-icon :icon="['fas', 'wave-square']" class="menu-icon" />
+            <span>Pathway</span>
           </el-menu-item>
 
           <el-menu-item index="/download">
@@ -153,8 +163,10 @@ const isDark = ref(useDark());
 }
 
 .menu-icon {
-  margin-right: 8px; /* 图标与文字的间距 */
-  font-size: 1.1em;   /* 稍微调整图标大小使其与文字和谐 */
+  margin-right: 8px;
+  /* 图标与文字的间距 */
+  font-size: 1.1em;
+  /* 稍微调整图标大小使其与文字和谐 */
   vertical-align: middle;
 }
 

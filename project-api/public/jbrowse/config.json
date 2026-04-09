@@ -1,0 +1,123 @@
+{
+    "assemblies": [
+        {
+            "name": "UCAS_Aco_QD_v1",
+            "sequence": {
+                "type": "ReferenceSequenceTrack",
+                "trackId": "aco_ref_seq",
+                "adapter": {
+                    "type": "IndexedFastaAdapter",
+                    "fastaLocation": {
+                        "uri": "data/UCAS_AcoGenome_QD.fasta"
+                    },
+                    "faiLocation": {
+                        "uri": "data/UCAS_AcoGenome_QD.fasta.fai"
+                    }
+                }
+            }
+        }
+    ],
+    "tracks": [
+        {
+            "type": "FeatureTrack",
+            "trackId": "original_gff",
+            "name": "Original Annotation (QD)",
+            "assemblyNames": [
+                "UCAS_Aco_QD_v1"
+            ],
+            "adapter": {
+                "type": "Gff3TabixAdapter",
+                "gffGzLocation": {
+                    "uri": "data/UCAS_AcoGenome_QD.gff.gz"
+                },
+                "index": {
+                    "location": {
+                        "uri": "data/UCAS_AcoGenome_QD.gff.gz.tbi"
+                    }
+                }
+            }
+        },
+        {
+            "type": "FeatureTrack",
+            "trackId": "refined_gff3",
+            "name": "Refined Annotation (CycloneSeq)",
+            "assemblyNames": [
+                "UCAS_Aco_QD_v1"
+            ],
+            "adapter": {
+                "type": "Gff3TabixAdapter",
+                "gffGzLocation": {
+                    "uri": "data/UCAS_AcoGenome_QD_refined.gff3.gz"
+                },
+                "index": {
+                    "location": {
+                        "uri": "data/UCAS_AcoGenome_QD_refined.gff3.gz.tbi"
+                    }
+                }
+            }
+        }
+    ],
+    "defaultSession": {
+        "name": "Initial View",
+        "views": [
+            {
+                "id": "linear_view",
+                "type": "LinearGenomeView",
+                "bpPerPx": 2.8,
+                "offsetPx": 7908808,
+                "displayedRegions": [
+                    {
+                        "assemblyName": "UCAS_Aco_QD_v1",
+                        "refName": "chr1",
+                        "start": 0,
+                        "end": 49417701
+                    }
+                ],
+                "tracks": [
+                    {
+                        "type": "ReferenceSequenceTrack",
+                        "configuration": "aco_ref_seq",
+                        "displays": [
+                            {
+                                "type": "LinearReferenceSequenceDisplay",
+                                "configuration": "aco_ref_seq-LinearReferenceSequenceDisplay",
+                                "height": 120
+                            }
+                        ]
+                    },
+                    {
+                        "type": "FeatureTrack",
+                        "configuration": "original_gff",
+                        "displays": [
+                            {
+                                "type": "LinearBasicDisplay",
+                                "configuration": "original_gff-LinearBasicDisplay",
+                                "height": 180
+                            }
+                        ]
+                    },
+                    {
+                        "type": "FeatureTrack",
+                        "configuration": "refined_gff3",
+                        "displays": [
+                            {
+                                "type": "LinearBasicDisplay",
+                                "configuration": "refined_gff3-LinearBasicDisplay",
+                                "height": 200
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "configuration": {
+        "theme": {
+            "palette": {
+                "primary": {
+                    "main": "#409EFF"
+                }
+            }
+        }
+    }
+}
