@@ -147,33 +147,27 @@ onMounted(() => {
             <span>Citation</span>
           </h1>
           <div class="citation-container">
-            <div>
-              <div class="citation-content">
-                <span class="citation-index">[1]</span>
-                <span class="citation-text">
-                  Github: AcoAtlas_AMOA.
-                  <a href="https://github.com/ZaakZoeng/AcoAtlas_AMOA"
-                    target="_blank">https://github.com/ZaakZoeng/AcoAtlas_AMOA</a>.
-                </span>
-              </div>
+            <div class="citation-content">
+              <span class="citation-index">[1]</span>
+              <span class="citation-text">
+                Github: AcoAtlas_AMOA.
+                <a href="https://github.com/ZaakZoeng/AcoAtlas_AMOA"
+                  target="_blank">https://github.com/ZaakZoeng/AcoAtlas_AMOA</a>.
+              </span>
             </div>
-            <div>
-              <div class="citation-content">
-                <span class="citation-index">[2]</span>
-                <span class="citation-text">
-                  Moon Jellyfish snRNA-seq dataset.
-                  <a href="https://github.com/ZaakZoeng/AcoAtlas_AMOA" target="_blank">单细胞核转录组数据集</a>.
-                </span>
-              </div>
+            <div hidden class="citation-content">
+              <span class="citation-index">[2]</span>
+              <span class="citation-text">
+                Moon Jellyfish snRNA-seq dataset.
+                <a href="https://github.com/ZaakZoeng/AcoAtlas_AMOA" target="_blank">单细胞核转录组数据集</a>.
+              </span>
             </div>
-            <div>
-              <div class="citation-content">
-                <span class="citation-index">[3]</span>
-                <span class="citation-text">
-                  Moon Jellyfish Stereo-seq dataset.
-                  <a href="https://github.com/ZaakZoeng/AcoAtlas_AMOA" target="_blank">空间转录组数据集</a>.
-                </span>
-              </div>
+            <div hidden class="citation-content">
+              <span class="citation-index">[3]</span>
+              <span class="citation-text">
+                Moon Jellyfish Stereo-seq dataset.
+                <a href="https://github.com/ZaakZoeng/AcoAtlas_AMOA" target="_blank">空间转录组数据集</a>.
+              </span>
             </div>
           </div>
         </el-card>

@@ -141,23 +141,19 @@ onMounted(() => {
             <span>Citation</span>
           </h1>
           <div class="citation-container">
-            <div>
-              <div class="citation-content">
-                <span class="citation-index">[1]</span>
-                <span class="citation-text">
-                  Github代码链接.
-                  <a href="https://doi.org/10.1038/s41597-026-07102-9" target="_blank">Github代码链接</a>.
-                </span>
-              </div>
+            <div class="citation-content">
+              <span class="citation-index">[1]</span>
+              <span class="citation-text">
+                Github代码链接.
+                <a href="https://doi.org/10.1038/s41597-026-07102-9" target="_blank">Github代码链接</a>.
+              </span>
             </div>
-            <div>
-              <div class="citation-content">
-                <span class="citation-index">[1]</span>
-                <span class="citation-text">
-                  跨物种比较分析数据资源.
-                  <a href="https://doi.org/10.1038/s41597-026-07102-9" target="_blank">跨物种比较分析数据资源</a>.
-                </span>
-              </div>
+            <div class="citation-content">
+              <span class="citation-index">[1]</span>
+              <span class="citation-text">
+                跨物种比较分析数据资源.
+                <a href="https://doi.org/10.1038/s41597-026-07102-9" target="_blank">跨物种比较分析数据资源</a>.
+              </span>
             </div>
           </div>
         </el-card>

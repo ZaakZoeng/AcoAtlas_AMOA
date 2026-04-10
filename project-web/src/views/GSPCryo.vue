@@ -133,33 +133,31 @@ onMounted(() => {
             <span>Citation</span>
           </h1>
           <div class="citation-container">
-            <div>
-              <div class="citation-content">
-                <span class="citation-index">[1]</span>
-                <span class="citation-text">
-                  张泽，冯春露，庄镇堃，陈成，胡馨月，陈铎元. 一种高含水量样本的空间转录组制备方法及其应用[P]. 中国：CN120275136B，2025-11-04 [2026-03-08].
-                  <a href="https://epub.cnipa.gov.cn/cred/CN120275136B"
-                    target="_blank">https://epub.cnipa.gov.cn/cred/CN120275136B</a>.
-                </span>
-              </div>
-              <div hidden class="citation-content">
-                <span class="citation-index">[2]</span>
-                <span class="citation-text">
-                  Zhang Z, Feng C, Lin Y, Wang L, Cai X, Mo S, Chang H, Zhuang Z, Chen D, Hu X, Guo W, Lu Y, Feng S, Xu X,
-                  Liu S, Wang M, Liu X. GSP-Cryo: Gelatin pretreatment enables cryosectioning of brittle tissues for
-                  spatial transcriptomics. iScience. (Manuscript submitted for publication).
-                  <a href="https://epub.cnipa.gov.cn/cred/CN120275136B"
-                    target="_blank">https://epub.cnipa.gov.cn/cred/CN120275136B</a>.
-                </span>
-              </div>
-              <div hidden class="citation-content">
-                <span class="citation-index">[3]</span>
-                <span class="citation-text">
-                  Github: AcoProtocol_GSP-Cryo.
-                  <a href="https://github.com/ZaakZoeng/AcoProtocol_GSP-Cryo"
-                    target="_blank">https://github.com/ZaakZoeng/AcoProtocol_GSP-Cryo</a>.
-                </span>
-              </div>
+            <div class="citation-content">
+              <span class="citation-index">[1]</span>
+              <span class="citation-text">
+                张泽，冯春露，庄镇堃，陈成，胡馨月，陈铎元. 一种高含水量样本的空间转录组制备方法及其应用[P]. 中国：CN120275136B，2025-11-04 [2026-03-08].
+                <a href="https://epub.cnipa.gov.cn/cred/CN120275136B"
+                  target="_blank">https://epub.cnipa.gov.cn/cred/CN120275136B</a>.
+              </span>
+            </div>
+            <div hidden class="citation-content">
+              <span class="citation-index">[2]</span>
+              <span class="citation-text">
+                Zhang Z, Feng C, Lin Y, Wang L, Cai X, Mo S, Chang H, Zhuang Z, Chen D, Hu X, Guo W, Lu Y, Feng S, Xu X,
+                Liu S, Wang M, Liu X. GSP-Cryo: Gelatin pretreatment enables cryosectioning of brittle tissues for
+                spatial transcriptomics. iScience. (Manuscript submitted for publication).
+                <a href="https://epub.cnipa.gov.cn/cred/CN120275136B"
+                  target="_blank">https://epub.cnipa.gov.cn/cred/CN120275136B</a>.
+              </span>
+            </div>
+            <div hidden class="citation-content">
+              <span class="citation-index">[3]</span>
+              <span class="citation-text">
+                Github: AcoProtocol_GSP-Cryo.
+                <a href="https://github.com/ZaakZoeng/AcoProtocol_GSP-Cryo"
+                  target="_blank">https://github.com/ZaakZoeng/AcoProtocol_GSP-Cryo</a>.
+              </span>
             </div>
           </div>
         </el-card>

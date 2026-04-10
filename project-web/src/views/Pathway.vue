@@ -305,16 +305,14 @@ onMounted(() => {
             <span>Citation</span>
           </h1>
           <div class="citation-container">
-            <div>
-              <div class="citation-content">
-                <span class="citation-index">[1]</span>
-                <span class="citation-text">
-                  Hu X, Guo Y, Zhang Z, Wang L, Chen D, Zhuang Z, Wang M, Liu S, Feng S. Chromosome-level genome
-                  assembly and annotation of the moon jellyfish Aurelia coerulea. Sci Data. 2025.
-                  <a href="https://doi.org/10.1038/s41597-026-07102-9"
-                    target="_blank">https://doi.org/10.1038/s41597-026-07102-9</a>.
-                </span>
-              </div>
+            <div class="citation-content">
+              <span class="citation-index">[1]</span>
+              <span class="citation-text">
+                Hu X, Guo Y, Zhang Z, Wang L, Chen D, Zhuang Z, Wang M, Liu S, Feng S. Chromosome-level genome
+                assembly and annotation of the moon jellyfish Aurelia coerulea. Sci Data. 2025.
+                <a href="https://doi.org/10.1038/s41597-026-07102-9"
+                  target="_blank">https://doi.org/10.1038/s41597-026-07102-9</a>.
+              </span>
             </div>
           </div>
         </el-card>

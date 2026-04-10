@@ -105,7 +105,8 @@ onMounted(() => {
               <span>Genomic JBrowse</span>
             </h1>
             <div class="iframe-wrapper">
-              <iframe src="api/jbrowse/index.html?config=config.json" class="iframe" allowfullscreen frameborder="0"></iframe>
+              <iframe src="api/jbrowse/index.html?config=config.json" class="iframe" allowfullscreen
+                frameborder="0"></iframe>
             </div>
           </div>
         </el-card>
@@ -116,50 +117,47 @@ onMounted(() => {
             <span>Citation</span>
           </h1>
           <div class="citation-container">
-            <div>
-              <div class="citation-content">
-                <span class="citation-index">[1]</span>
-                <span class="citation-text">
-                  Hu X, Guo Y, Zhang Z, Wang L, Chen D, Zhuang Z, Wang M, Liu S, Feng S. Chromosome-level genome
-                  assembly and annotation of the moon jellyfish Aurelia coerulea. Sci Data. 2025.
-                  <a href="https://doi.org/10.1038/s41597-026-07102-9"
-                    target="_blank">https://doi.org/10.1038/s41597-026-07102-9</a>.
-                </span>
-              </div>
-              <div class="citation-content">
-                <span class="citation-index">[2]</span>
-                <span class="citation-text">
-                  NCBI GenBank.
-                  <a href="https://identifiers.org/ncbi/insdc.gca:GCA_051233565.1"
-                    target="_blank">https://identifiers.org/ncbi/insdc.gca:GCA_051233565.1</a> (2025).
-                </span>
-              </div>
-              <div class="citation-content">
-                <span class="citation-index">[3]</span>
-                <span class="citation-text">
-                  NCBI Sequence Read Archive.
-                  <a href="https://identifiers.org/ncbi/insdc.sra:SRP596850"
-                    target="_blank">https://identifiers.org/ncbi/insdc.sra:SRP596850</a> (2025).
-                </span>
-              </div>
-              <div class="citation-content">
-                <span class="citation-index">[4]</span>
-                <span class="citation-text">
-                  Hu, Xinyue; Guo; Zhang, Ze; Wang, Liyuan; Chen, Duoyuan; Zhuang, Zhenkun; et al. (2025).
-                  Chromosome-level genome assembly and annotation of the moon jellyfish Aurelia coerulea. figshare.
-                  Dataset.
-                  <a href="https://doi.org/10.6084/m9.figshare.29465030.v2"
-                    target="_blank">https://doi.org/10.6084/m9.figshare.29465030.v2</a>
-                </span>
-              </div>
-              <div hidden class="citation-content">
-                <span class="citation-index">[5]</span>
-                <span class="citation-text">
-                  Optimized annotations
-                  <a href="https://doi.org/10.6084/m9.figshare.29465030.v2"
-                    target="_blank">优化后的注释信息链接</a>
-                </span>
-              </div>
+            <div class="citation-content">
+              <span class="citation-index">[1]</span>
+              <span class="citation-text">
+                Hu X, Guo Y, Zhang Z, Wang L, Chen D, Zhuang Z, Wang M, Liu S, Feng S. Chromosome-level genome assembly
+                and annotation of the moon jellyfish Aurelia coerulea. Sci Data (2026).
+                <a href="https://doi.org/10.1038/s41597-026-07102-9"
+                  target="_blank">https://doi.org/10.1038/s41597-026-07102-9</a>
+              </span>
+            </div>
+            <div class="citation-content">
+              <span class="citation-index">[2]</span>
+              <span class="citation-text">
+                NCBI GenBank.
+                <a href="https://identifiers.org/ncbi/insdc.gca:GCA_051233565.1"
+                  target="_blank">https://identifiers.org/ncbi/insdc.gca:GCA_051233565.1</a> (2025).
+              </span>
+            </div>
+            <div class="citation-content">
+              <span class="citation-index">[3]</span>
+              <span class="citation-text">
+                NCBI Sequence Read Archive.
+                <a href="https://identifiers.org/ncbi/insdc.sra:SRP596850"
+                  target="_blank">https://identifiers.org/ncbi/insdc.sra:SRP596850</a> (2025).
+              </span>
+            </div>
+            <div class="citation-content">
+              <span class="citation-index">[4]</span>
+              <span class="citation-text">
+                Hu, Xinyue; Guo; Zhang, Ze; Wang, Liyuan; Chen, Duoyuan; Zhuang, Zhenkun; et al. (2025).
+                Chromosome-level genome assembly and annotation of the moon jellyfish Aurelia coerulea. figshare.
+                Dataset.
+                <a href="https://doi.org/10.6084/m9.figshare.29465030.v2"
+                  target="_blank">https://doi.org/10.6084/m9.figshare.29465030.v2</a>
+              </span>
+            </div>
+            <div hidden class="citation-content">
+              <span class="citation-index">[5]</span>
+              <span class="citation-text">
+                Optimized annotations
+                <a href="https://doi.org/10.6084/m9.figshare.29465030.v2" target="_blank">优化后的注释信息链接</a>
+              </span>
             </div>
           </div>
         </el-card>
