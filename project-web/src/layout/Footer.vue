@@ -16,9 +16,12 @@ const loadGlobeScript = (target: HTMLElement | null) => {
   if (!target) return;
   const script = document.createElement("script");
   script.type = "text/javascript";
-  script.id = "clstr_globe";
-  script.setAttribute("data-clstr-globe-link", "https://clustrmaps.com/site/1c9kq");
-  script.src = "//clustrmaps.com/globe.js?d=DgbseS68tbhFmnePsrKjWwI4qLL6DWkohB75KvmvBLo";
+  // script.id = "clstr_globe";
+  // script.setAttribute("data-clstr-globe-link", "https://clustrmaps.com/site/1c9kq");
+  // script.src = "//clustrmaps.com/globe.js?d=DgbseS68tbhFmnePsrKjWwI4qLL6DWkohB75KvmvBLo";
+  script.id = "mmvst_globe";
+  script.setAttribute("data-clstr-globe-link", "https://mapmyvisitors.com/web/1c837");
+  script.src = "//mapmyvisitors.com/globe.js?d=FdVXsCmOYvwrlq2ENFLx5kuTGd8aqUlIqEzGVTT7dt0";
   target.appendChild(script);
 };
 
