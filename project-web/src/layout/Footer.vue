@@ -8,29 +8,72 @@ const isDark = ref(useDark());
 // 1. 自动获取当前年份
 const currentYear = new Date().getFullYear();
 
-// 2. 动态加载 Clustrmaps Globe 脚本
+// 2. 动态加载 MapMyVisitors Globe 脚本
 const globeContainer = ref<HTMLElement | null>(null);
 const mobileGlobeContainer = ref<HTMLElement | null>(null);
+const flagMapContainer = ref<HTMLElement | null>(null);
+const mobileFlagMapContainer = ref<HTMLElement | null>(null);
+const visitorMapContainer = ref<HTMLElement | null>(null);
+const mobileVisitorMapContainer = ref<HTMLElement | null>(null);
 
 const loadGlobeScript = (target: HTMLElement | null) => {
   if (!target) return;
   const script = document.createElement("script");
   script.type = "text/javascript";
-  // script.id = "clstr_globe";
-  // script.setAttribute("data-clstr-globe-link", "https://clustrmaps.com/site/1c9kq");
-  // script.src = "//clustrmaps.com/globe.js?d=DgbseS68tbhFmnePsrKjWwI4qLL6DWkohB75KvmvBLo";
   script.id = "mmvst_globe";
-  script.setAttribute("data-clstr-globe-link", "https://mapmyvisitors.com/web/1c837");
   script.src = "//mapmyvisitors.com/globe.js?d=FdVXsCmOYvwrlq2ENFLx5kuTGd8aqUlIqEzGVTT7dt0";
   target.appendChild(script);
+};
+
+const loadFlagCounterMap = (target: HTMLElement | null) => {
+  if (!target) return;
+
+  const link = document.createElement("a");
+  link.href = "https://info.flagcounter.com/iDsR";
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+
+  const image = document.createElement("img");
+  image.src =
+    "https://s01.flagcounter.com/map/iDsR/size_s/txt_000000/border_CCCCCC/pageviews_1/viewers_0/flags_0/";
+  image.alt = "Flag Counter";
+  image.style.border = "0";
+  image.style.display = "block";
+  image.style.maxWidth = "100%";
+  image.style.height = "auto";
+
+  link.appendChild(image);
+  target.appendChild(link);
+};
+
+const loadMapMyVisitorsMap = (target: HTMLElement | null) => {
+  if (!target) return;
+
+  const link = document.createElement("a");
+  link.href = "https://mapmyvisitors.com/web/1c837";
+  link.title = "Visit tracker";
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+
+  const image = document.createElement("img");
+  image.src =
+    "https://mapmyvisitors.com/map.png?d=geToSe3DhPtbxgita3aSIsk66NN6ki0gXzkwoK8BuTw&cl=ffffff";
+  image.alt = "Visit tracker";
+
+  link.appendChild(image);
+  target.appendChild(link);
 };
 
 onMounted(() => {
   // 根据当前显示的容器加载脚本
   if (window.innerWidth >= 680) {
     loadGlobeScript(globeContainer.value);
+    loadFlagCounterMap(flagMapContainer.value);
+    loadMapMyVisitorsMap(visitorMapContainer.value);
   } else {
     loadGlobeScript(mobileGlobeContainer.value);
+    loadFlagCounterMap(mobileFlagMapContainer.value);
+    loadMapMyVisitorsMap(mobileVisitorMapContainer.value);
   }
 });
 </script>
@@ -54,7 +97,9 @@ onMounted(() => {
         </div>
         <div class="footer-wrap-flex-grow"></div>
         
-        <div ref="globeContainer" class="globe-box"></div>
+        <div ref="globeContainer" class="globe-box" hidden aria-hidden="true"></div>
+        <div ref="visitorMapContainer" class="visitor-map-box" hidden aria-hidden="true"></div>
+        <div ref="flagMapContainer" class="flag-map-box"></div>
         
         <div class="footer-wrap-flex-grow"></div>
         <div class="footer-wrap-text">
@@ -71,7 +116,19 @@ onMounted(() => {
           </a>
         </div>
         
-        <div ref="mobileGlobeContainer" class="mobile-globe-box"></div>
+        <div
+          ref="mobileGlobeContainer"
+          class="mobile-globe-box"
+          hidden
+          aria-hidden="true"
+        ></div>
+        <div
+          ref="mobileVisitorMapContainer"
+          class="mobile-visitor-map-box"
+          hidden
+          aria-hidden="true"
+        ></div>
+        <div ref="mobileFlagMapContainer" class="mobile-flag-map-box"></div>
 
         <div class="mobile-footer-wrap-text">
           <div>© 2024 - {{ currentYear }}. Powered by <a href="https://zaakzoeng.github.io/" target="_blank">Ze Zhang</a></div>
@@ -83,16 +140,23 @@ onMounted(() => {
 </template>
 
 <style scoped>
-/* 样式调整以适配 3D 地球仪 */
-.globe-box {
-  width: 150px; /* 根据需要调整地球仪大小 */
-  display: flex;
-  align-items: center;
+.globe-box,
+.mobile-globe-box,
+.visitor-map-box,
+.mobile-visitor-map-box {
+  display: none;
 }
 
-.mobile-globe-box {
+.flag-map-box {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-flag-map-box {
+  width: 200px;
   margin: 20px auto;
-  width: 120px;
 }
 
 .footer-wrap {
