@@ -1,6 +1,6 @@
-project-api/public/jbrowse/data/UCAS_AcoGenome_QD.fasta
 project-api/public/download/AucoData/Auco.sn.normalized.annotated.gzip.h5ad
 project-api/public/download/BasalMetazoaDataset/sc_BasalMetazoa.normalized.gzip.h5ad
+project-api/public/download/BasalMetazoaDataset/sc_BasalMetazoaDataset.tar.gz
 project-api/public/download/scOrthoGeneH5ad/Auco.OG.normalized.gzip.h5ad
 project-api/public/download/scOrthoGeneH5ad/Dare.OG.normalized.gzip.h5ad
 project-api/public/download/scOrthoGeneRDS/Auco.OG.normalized.rds
