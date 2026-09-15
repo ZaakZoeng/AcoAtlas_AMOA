@@ -14,7 +14,6 @@ declare module '@vue/runtime-core' {
     CentralTimeline: typeof import('./src/components/CentralTimeline.vue')['default']
     ElAffix: typeof import('element-plus/es')['ElAffix']
     ElBacktop: typeof import('element-plus/es')['ElBacktop']
-    ElButton: typeof import('element-plus/es')['ElButton']
     ElCard: typeof import('element-plus/es')['ElCard']
     ElCol: typeof import('element-plus/es')['ElCol']
     ElDivider: typeof import('element-plus/es')['ElDivider']

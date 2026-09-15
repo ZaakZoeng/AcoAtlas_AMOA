@@ -158,198 +158,379 @@ const rawDatasetTable: DatasetResource[] = [
   }
 ]
 
+// File paths follow the latest server download directory supplied by the project owner.
 const amoaDatasetTable: DatasetResource[] = [
   {
     name: 'Aurelia coerulea annotated snRNA-seq atlas (gene-level)',
     file: 'AucoData/Auco.sn.normalized.annotated.gzip.h5ad',
-    category: 'Aurelia final atlases',
+    category: 'Aurelia atlases',
     url: '/api/download/AucoData/Auco.sn.normalized.annotated.gzip.h5ad'
   },
   {
     name: 'Aurelia coerulea annotated snRNA-seq atlas (OG-level)',
     file: 'AucoData/Auco.sn.normalized.annotated.OGs.gzip.h5ad',
-    category: 'Aurelia final atlases',
+    category: 'Aurelia atlases',
     url: '/api/download/AucoData/Auco.sn.normalized.annotated.OGs.gzip.h5ad'
   },
   {
     name: 'Aurelia coerulea spatial transcriptome (bin50, gene-level)',
     file: 'AucoData/Auco.st.bin50.gzip.h5ad',
-    category: 'Aurelia final atlases',
+    category: 'Aurelia atlases',
     url: '/api/download/AucoData/Auco.st.bin50.gzip.h5ad'
   },
   {
     name: 'Aurelia coerulea spatial transcriptome (bin50, normalized OG-level)',
     file: 'AucoData/Auco.st.bin50.normalized.OGs.gzip.h5ad',
-    category: 'Aurelia final atlases',
+    category: 'Aurelia atlases',
     url: '/api/download/AucoData/Auco.st.bin50.normalized.OGs.gzip.h5ad'
+  },
+  {
+    name: 'Aurelia coerulea QDv2 raw annotation (GFF)',
+    file: 'AucoData/au.coerulea.QDv2.raw.gff',
+    category: 'Aurelia genome annotations',
+    url: '/api/download/AucoData/au.coerulea.QDv2.raw.gff'
+  },
+  {
+    name: 'Aurelia coerulea QDv2 annotation optimized for dnbc4tools (GFF3)',
+    file: 'AucoData/au.coerulea.QDv2.optimized_for_dnbc4tools.gff3',
+    category: 'Aurelia genome annotations',
+    url: '/api/download/AucoData/au.coerulea.QDv2.optimized_for_dnbc4tools.gff3'
+  },
+  {
+    name: 'Aurelia coerulea QDv2 annotation optimized for SAW-ST-V8 (GFF)',
+    file: 'AucoData/au.coerulea.QDv2.optimized_for_SAW-ST-V8.gff',
+    category: 'Aurelia genome annotations',
+    url: '/api/download/AucoData/au.coerulea.QDv2.optimized_for_SAW-ST-V8.gff'
   },
   {
     name: 'Integrated nine-taxon cell atlas (TAR.GZ archive)',
     file: 'BasalMetazoaDataset/sc_BasalMetazoaDataset.tar.gz',
-    category: 'Integrated atlas',
+    category: '9 species OG-level integrated atlas archive',
     url: '/api/download/BasalMetazoaDataset/sc_BasalMetazoaDataset.tar.gz'
   },
   {
     name: 'Auco OG-level cell expression (AnnData)',
     file: 'scOrthoGeneH5ad/Auco.OG.normalized.gzip.h5ad',
-    category: 'OG expression · AnnData',
+    category: '9 species OG-level AnnData',
     url: '/api/download/scOrthoGeneH5ad/Auco.OG.normalized.gzip.h5ad'
   },
   {
     name: 'ClH23 OG-level cell expression (AnnData)',
     file: 'scOrthoGeneH5ad/ClH23.OG.normalized.gzip.h5ad',
-    category: 'OG expression · AnnData',
+    category: '9 species OG-level AnnData',
     url: '/api/download/scOrthoGeneH5ad/ClH23.OG.normalized.gzip.h5ad'
   },
   {
     name: 'Clhe OG-level cell expression (AnnData)',
     file: 'scOrthoGeneH5ad/Clhe.OG.normalized.gzip.h5ad',
-    category: 'OG expression · AnnData',
+    category: '9 species OG-level AnnData',
     url: '/api/download/scOrthoGeneH5ad/Clhe.OG.normalized.gzip.h5ad'
   },
   {
     name: 'Dare OG-level cell expression (AnnData)',
     file: 'scOrthoGeneH5ad/Dare.OG.normalized.gzip.h5ad',
-    category: 'OG expression · AnnData',
+    category: '9 species OG-level AnnData',
     url: '/api/download/scOrthoGeneH5ad/Dare.OG.normalized.gzip.h5ad'
   },
   {
     name: 'HoH13 OG-level cell expression (AnnData)',
     file: 'scOrthoGeneH5ad/HoH13.OG.normalized.gzip.h5ad',
-    category: 'OG expression · AnnData',
+    category: '9 species OG-level AnnData',
     url: '/api/download/scOrthoGeneH5ad/HoH13.OG.normalized.gzip.h5ad'
   },
   {
     name: 'Neve OG-level cell expression (AnnData)',
     file: 'scOrthoGeneH5ad/Neve.OG.normalized.gzip.h5ad',
-    category: 'OG expression · AnnData',
+    category: '9 species OG-level AnnData',
     url: '/api/download/scOrthoGeneH5ad/Neve.OG.normalized.gzip.h5ad'
   },
   {
     name: 'Spla OG-level cell expression (AnnData)',
     file: 'scOrthoGeneH5ad/Spla.OG.normalized.gzip.h5ad',
-    category: 'OG expression · AnnData',
+    category: '9 species OG-level AnnData',
     url: '/api/download/scOrthoGeneH5ad/Spla.OG.normalized.gzip.h5ad'
   },
   {
     name: 'TrH1 OG-level cell expression (AnnData)',
     file: 'scOrthoGeneH5ad/TrH1.OG.normalized.gzip.h5ad',
-    category: 'OG expression · AnnData',
+    category: '9 species OG-level AnnData',
     url: '/api/download/scOrthoGeneH5ad/TrH1.OG.normalized.gzip.h5ad'
   },
   {
     name: 'TrH2 OG-level cell expression (AnnData)',
     file: 'scOrthoGeneH5ad/TrH2.OG.normalized.gzip.h5ad',
-    category: 'OG expression · AnnData',
+    category: '9 species OG-level AnnData',
     url: '/api/download/scOrthoGeneH5ad/TrH2.OG.normalized.gzip.h5ad'
   },
   {
     name: 'Auco OG-level cell expression (RDS)',
     file: 'scOrthoGeneRDS/Auco.OG.normalized.rds',
-    category: 'OG expression · RDS',
+    category: '9 species OG-level RDS',
     url: '/api/download/scOrthoGeneRDS/Auco.OG.normalized.rds'
   },
   {
     name: 'ClH23 OG-level cell expression (RDS)',
     file: 'scOrthoGeneRDS/ClH23.OG.normalized.rds',
-    category: 'OG expression · RDS',
+    category: '9 species OG-level RDS',
     url: '/api/download/scOrthoGeneRDS/ClH23.OG.normalized.rds'
   },
   {
     name: 'Clhe OG-level cell expression (RDS)',
     file: 'scOrthoGeneRDS/Clhe.OG.normalized.rds',
-    category: 'OG expression · RDS',
+    category: '9 species OG-level RDS',
     url: '/api/download/scOrthoGeneRDS/Clhe.OG.normalized.rds'
   },
   {
     name: 'Dare OG-level cell expression (RDS)',
     file: 'scOrthoGeneRDS/Dare.OG.normalized.rds',
-    category: 'OG expression · RDS',
+    category: '9 species OG-level RDS',
     url: '/api/download/scOrthoGeneRDS/Dare.OG.normalized.rds'
   },
   {
     name: 'HoH13 OG-level cell expression (RDS)',
     file: 'scOrthoGeneRDS/HoH13.OG.normalized.rds',
-    category: 'OG expression · RDS',
+    category: '9 species OG-level RDS',
     url: '/api/download/scOrthoGeneRDS/HoH13.OG.normalized.rds'
   },
   {
     name: 'Neve OG-level cell expression (RDS)',
     file: 'scOrthoGeneRDS/Neve.OG.normalized.rds',
-    category: 'OG expression · RDS',
+    category: '9 species OG-level RDS',
     url: '/api/download/scOrthoGeneRDS/Neve.OG.normalized.rds'
   },
   {
     name: 'Spla OG-level cell expression (RDS)',
     file: 'scOrthoGeneRDS/Spla.OG.normalized.rds',
-    category: 'OG expression · RDS',
+    category: '9 species OG-level RDS',
     url: '/api/download/scOrthoGeneRDS/Spla.OG.normalized.rds'
   },
   {
     name: 'TrH1 OG-level cell expression (RDS)',
     file: 'scOrthoGeneRDS/TrH1.OG.normalized.rds',
-    category: 'OG expression · RDS',
+    category: '9 species OG-level RDS',
     url: '/api/download/scOrthoGeneRDS/TrH1.OG.normalized.rds'
   },
   {
     name: 'TrH2 OG-level cell expression (RDS)',
     file: 'scOrthoGeneRDS/TrH2.OG.normalized.rds',
-    category: 'OG expression · RDS',
+    category: '9 species OG-level RDS',
     url: '/api/download/scOrthoGeneRDS/TrH2.OG.normalized.rds'
   },
   {
     name: 'Auco normalized gene-level cell expression (AnnData)',
     file: 'SingleCellDataH5ad/Auco.normalized.gzip.h5ad',
-    category: 'Gene expression · AnnData',
+    category: '9 species gene-level AnnData',
     url: '/api/download/SingleCellDataH5ad/Auco.normalized.gzip.h5ad'
   },
   {
     name: 'ClH23 normalized gene-level cell expression (AnnData)',
     file: 'SingleCellDataH5ad/ClH23.normalized.gzip.h5ad',
-    category: 'Gene expression · AnnData',
+    category: '9 species gene-level AnnData',
     url: '/api/download/SingleCellDataH5ad/ClH23.normalized.gzip.h5ad'
   },
   {
     name: 'Clhe normalized gene-level cell expression (AnnData)',
     file: 'SingleCellDataH5ad/Clhe.normalized.gzip.h5ad',
-    category: 'Gene expression · AnnData',
+    category: '9 species gene-level AnnData',
     url: '/api/download/SingleCellDataH5ad/Clhe.normalized.gzip.h5ad'
   },
   {
     name: 'Dare normalized gene-level cell expression (AnnData)',
     file: 'SingleCellDataH5ad/Dare.normalized.gzip.h5ad',
-    category: 'Gene expression · AnnData',
+    category: '9 species gene-level AnnData',
     url: '/api/download/SingleCellDataH5ad/Dare.normalized.gzip.h5ad'
   },
   {
     name: 'HoH13 normalized gene-level cell expression (AnnData)',
     file: 'SingleCellDataH5ad/HoH13.normalized.gzip.h5ad',
-    category: 'Gene expression · AnnData',
+    category: '9 species gene-level AnnData',
     url: '/api/download/SingleCellDataH5ad/HoH13.normalized.gzip.h5ad'
   },
   {
     name: 'Neve normalized gene-level cell expression (AnnData)',
     file: 'SingleCellDataH5ad/Neve.normalized.gzip.h5ad',
-    category: 'Gene expression · AnnData',
+    category: '9 species gene-level AnnData',
     url: '/api/download/SingleCellDataH5ad/Neve.normalized.gzip.h5ad'
   },
   {
     name: 'Spla normalized gene-level cell expression (AnnData)',
     file: 'SingleCellDataH5ad/Spla.normalized.gzip.h5ad',
-    category: 'Gene expression · AnnData',
+    category: '9 species gene-level AnnData',
     url: '/api/download/SingleCellDataH5ad/Spla.normalized.gzip.h5ad'
   },
   {
     name: 'TrH1 normalized gene-level cell expression (AnnData)',
     file: 'SingleCellDataH5ad/TrH1.normalized.gzip.h5ad',
-    category: 'Gene expression · AnnData',
+    category: '9 species gene-level AnnData',
     url: '/api/download/SingleCellDataH5ad/TrH1.normalized.gzip.h5ad'
   },
   {
     name: 'TrH2 normalized gene-level cell expression (AnnData)',
     file: 'SingleCellDataH5ad/TrH2.normalized.gzip.h5ad',
-    category: 'Gene expression · AnnData',
+    category: '9 species gene-level AnnData',
     url: '/api/download/SingleCellDataH5ad/TrH2.normalized.gzip.h5ad'
+  },
+  {
+    name: 'Auco protein sequences (FASTA)',
+    file: 'ProteinSequence/Auco.protein.fasta',
+    category: '9 species protein sequences',
+    url: '/api/download/ProteinSequence/Auco.protein.fasta'
+  },
+  {
+    name: 'ClH23 protein sequences (FASTA)',
+    file: 'ProteinSequence/ClH23.protein.fasta',
+    category: '9 species protein sequences',
+    url: '/api/download/ProteinSequence/ClH23.protein.fasta'
+  },
+  {
+    name: 'Clhe protein sequences (FASTA)',
+    file: 'ProteinSequence/Clhe.protein.fasta',
+    category: '9 species protein sequences',
+    url: '/api/download/ProteinSequence/Clhe.protein.fasta'
+  },
+  {
+    name: 'Dare protein sequences (FASTA)',
+    file: 'ProteinSequence/Dare.protein.fasta',
+    category: '9 species protein sequences',
+    url: '/api/download/ProteinSequence/Dare.protein.fasta'
+  },
+  {
+    name: 'HoH13 protein sequences (FASTA)',
+    file: 'ProteinSequence/HoH13.protein.fasta',
+    category: '9 species protein sequences',
+    url: '/api/download/ProteinSequence/HoH13.protein.fasta'
+  },
+  {
+    name: 'Neve protein sequences (FASTA)',
+    file: 'ProteinSequence/Neve.protein.fasta',
+    category: '9 species protein sequences',
+    url: '/api/download/ProteinSequence/Neve.protein.fasta'
+  },
+  {
+    name: 'Spla protein sequences (FASTA)',
+    file: 'ProteinSequence/Spla.protein.fasta',
+    category: '9 species protein sequences',
+    url: '/api/download/ProteinSequence/Spla.protein.fasta'
+  },
+  {
+    name: 'TrH1 protein sequences (FASTA)',
+    file: 'ProteinSequence/TrH1.protein.fasta',
+    category: '9 species protein sequences',
+    url: '/api/download/ProteinSequence/TrH1.protein.fasta'
+  },
+  {
+    name: 'TrH2 protein sequences (FASTA)',
+    file: 'ProteinSequence/TrH2.protein.fasta',
+    category: '9 species protein sequences',
+    url: '/api/download/ProteinSequence/TrH2.protein.fasta'
+  },
+  {
+    name: 'Auco protein-to-orthogroup mapping (CSV)',
+    file: 'SpeciesOrthogroup/Auco.protein_to_orthogroup.csv',
+    category: '9 species protein-to-orthogroup mappings',
+    url: '/api/download/SpeciesOrthogroup/Auco.protein_to_orthogroup.csv'
+  },
+  {
+    name: 'ClH23 protein-to-orthogroup mapping (CSV)',
+    file: 'SpeciesOrthogroup/ClH23.protein_to_orthogroup.csv',
+    category: '9 species protein-to-orthogroup mappings',
+    url: '/api/download/SpeciesOrthogroup/ClH23.protein_to_orthogroup.csv'
+  },
+  {
+    name: 'Clhe protein-to-orthogroup mapping (CSV)',
+    file: 'SpeciesOrthogroup/Clhe.protein_to_orthogroup.csv',
+    category: '9 species protein-to-orthogroup mappings',
+    url: '/api/download/SpeciesOrthogroup/Clhe.protein_to_orthogroup.csv'
+  },
+  {
+    name: 'Dare protein-to-orthogroup mapping (CSV)',
+    file: 'SpeciesOrthogroup/Dare.protein_to_orthogroup.csv',
+    category: '9 species protein-to-orthogroup mappings',
+    url: '/api/download/SpeciesOrthogroup/Dare.protein_to_orthogroup.csv'
+  },
+  {
+    name: 'HoH13 protein-to-orthogroup mapping (CSV)',
+    file: 'SpeciesOrthogroup/HoH13.protein_to_orthogroup.csv',
+    category: '9 species protein-to-orthogroup mappings',
+    url: '/api/download/SpeciesOrthogroup/HoH13.protein_to_orthogroup.csv'
+  },
+  {
+    name: 'Neve protein-to-orthogroup mapping (CSV)',
+    file: 'SpeciesOrthogroup/Neve.protein_to_orthogroup.csv',
+    category: '9 species protein-to-orthogroup mappings',
+    url: '/api/download/SpeciesOrthogroup/Neve.protein_to_orthogroup.csv'
+  },
+  {
+    name: 'Spla protein-to-orthogroup mapping (CSV)',
+    file: 'SpeciesOrthogroup/Spla.protein_to_orthogroup.csv',
+    category: '9 species protein-to-orthogroup mappings',
+    url: '/api/download/SpeciesOrthogroup/Spla.protein_to_orthogroup.csv'
+  },
+  {
+    name: 'TrH1 protein-to-orthogroup mapping (CSV)',
+    file: 'SpeciesOrthogroup/TrH1.protein_to_orthogroup.csv',
+    category: '9 species protein-to-orthogroup mappings',
+    url: '/api/download/SpeciesOrthogroup/TrH1.protein_to_orthogroup.csv'
+  },
+  {
+    name: 'TrH2 protein-to-orthogroup mapping (CSV)',
+    file: 'SpeciesOrthogroup/TrH2.protein_to_orthogroup.csv',
+    category: '9 species protein-to-orthogroup mappings',
+    url: '/api/download/SpeciesOrthogroup/TrH2.protein_to_orthogroup.csv'
+  },
+  {
+    name: 'Auco eggNOG-mapper functional annotations (TSV)',
+    file: 'EmapperAnnotations/Auco.emapper.annotations.tsv',
+    category: '9 species eggNOG functional annotations',
+    url: '/api/download/EmapperAnnotations/Auco.emapper.annotations.tsv'
+  },
+  {
+    name: 'ClH23 eggNOG-mapper functional annotations (TSV)',
+    file: 'EmapperAnnotations/ClH23.emapper.annotations.tsv',
+    category: '9 species eggNOG functional annotations',
+    url: '/api/download/EmapperAnnotations/ClH23.emapper.annotations.tsv'
+  },
+  {
+    name: 'Clhe eggNOG-mapper functional annotations (TSV)',
+    file: 'EmapperAnnotations/Clhe.emapper.annotations.tsv',
+    category: '9 species eggNOG functional annotations',
+    url: '/api/download/EmapperAnnotations/Clhe.emapper.annotations.tsv'
+  },
+  {
+    name: 'Dare eggNOG-mapper functional annotations (TSV)',
+    file: 'EmapperAnnotations/Dare.emapper.annotations.tsv',
+    category: '9 species eggNOG functional annotations',
+    url: '/api/download/EmapperAnnotations/Dare.emapper.annotations.tsv'
+  },
+  {
+    name: 'HoH13 eggNOG-mapper functional annotations (TSV)',
+    file: 'EmapperAnnotations/HoH13.emapper.annotations.tsv',
+    category: '9 species eggNOG functional annotations',
+    url: '/api/download/EmapperAnnotations/HoH13.emapper.annotations.tsv'
+  },
+  {
+    name: 'Neve eggNOG-mapper functional annotations (TSV)',
+    file: 'EmapperAnnotations/Neve.emapper.annotations.tsv',
+    category: '9 species eggNOG functional annotations',
+    url: '/api/download/EmapperAnnotations/Neve.emapper.annotations.tsv'
+  },
+  {
+    name: 'Spla eggNOG-mapper functional annotations (TSV)',
+    file: 'EmapperAnnotations/Spla.emapper.annotations.tsv',
+    category: '9 species eggNOG functional annotations',
+    url: '/api/download/EmapperAnnotations/Spla.emapper.annotations.tsv'
+  },
+  {
+    name: 'TrH1 eggNOG-mapper functional annotations (TSV)',
+    file: 'EmapperAnnotations/TrH1.emapper.annotations.tsv',
+    category: '9 species eggNOG functional annotations',
+    url: '/api/download/EmapperAnnotations/TrH1.emapper.annotations.tsv'
+  },
+  {
+    name: 'TrH2 eggNOG-mapper functional annotations (TSV)',
+    file: 'EmapperAnnotations/TrH2.emapper.annotations.tsv',
+    category: '9 species eggNOG functional annotations',
+    url: '/api/download/EmapperAnnotations/TrH2.emapper.annotations.tsv'
   }
 ]
 
@@ -581,37 +762,39 @@ const externalLinks = [
   }
 ]
 
-const selectedExternalCategory = ref('all')
+const selectedExternalCategory = ref('Database')
 const externalResourceCategories = [
-  { label: 'All resources', value: 'all' },
   { label: 'Databases', value: 'Database' },
   { label: 'Software tools', value: 'Software' }
 ]
 const filteredExternalLinks = computed(() =>
-  selectedExternalCategory.value === 'all'
-    ? externalLinks
-    : externalLinks.filter((row) => row.category === selectedExternalCategory.value)
+  externalLinks.filter((row) => row.category === selectedExternalCategory.value)
 )
 
-const selectedRawCategory = ref('all')
+const selectedRawCategory = ref('Raw CycloneSEQ')
 const rawDatasetCategories = [
-  { label: 'All raw data', value: 'all' },
   { label: 'Long-read sequencing', value: 'Raw CycloneSEQ' },
   { label: 'Single-cell / single-nucleus RNA-seq', value: 'Raw snRNA-seq' },
   { label: 'Spatial transcriptomics', value: 'Raw Stereo-seq' }
 ]
 const filteredRawDatasets = computed(() =>
-  selectedRawCategory.value === 'all'
-    ? rawDatasetTable
-    : rawDatasetTable.filter((row) => row.category === selectedRawCategory.value)
+  rawDatasetTable.filter((row) => row.category === selectedRawCategory.value)
 )
 
-const selectedCategory = ref('All datasets')
-const datasetCategories = ['All datasets', ...new Set(amoaDatasetTable.map((row) => row.category))]
+const datasetCategories = [
+  'Aurelia atlases',
+  'Aurelia genome annotations',
+  '9 species gene-level AnnData',
+  '9 species protein sequences',
+  '9 species eggNOG functional annotations',
+  '9 species protein-to-orthogroup mappings',
+  '9 species OG-level AnnData',
+  '9 species OG-level RDS',
+  '9 species OG-level integrated atlas archive'
+]
+const selectedCategory = ref(datasetCategories[0])
 const filteredDatasets = computed(() =>
-  selectedCategory.value === 'All datasets'
-    ? amoaDatasetTable
-    : amoaDatasetTable.filter((row) => row.category === selectedCategory.value)
+  amoaDatasetTable.filter((row) => row.category === selectedCategory.value)
 )
 </script>
 
@@ -642,14 +825,21 @@ const filteredDatasets = computed(() =>
         <nav class="section-nav" aria-label="Download sections">
           <a href="#raw-data">Raw Data</a>
           <a href="#public-data">Public Data</a>
-          <a href="#multi-omics">Multi-Omics Datasets</a>
+          <!-- <a href="#multi-omics">Multi-Omics Datasets</a> -->
           <a href="#external-resources">External Resources</a>
         </nav>
         <el-card id="raw-data" class="data-card" shadow="hover">
-          <template #header><div class="card-header">1. Raw Data</div></template>
+          <template #header>
+            <div class="card-header">
+              <font-awesome-icon :icon="['fas', 'download']" class="icon-margin" />
+              <span>Raw Data</span>
+            </div>
+          </template>
           <p class="resource-note">
-            {{ rawDatasetTable.length }} raw sequencing files for <i>Aurelia coerulea</i>:
-            CycloneSEQ, snRNA-seq and Stereo-seq. Archived under
+            {{ rawDatasetTable.length }} gzip-compressed FASTQ files for <i>Aurelia coerulea</i>,
+            covering long-read sequencing (CycloneSEQ), single-nucleus RNA-seq (DNBeLab C4
+            snRNA-seq) and spatial transcriptomics (Stereo-seq). Select a data type to download
+            files from
             <a
               href="https://db.cngb.org/data_resources/project/CNP0008642/"
               target="_blank"
@@ -673,20 +863,20 @@ const filteredDatasets = computed(() =>
               />
             </el-select>
           </div>
-          <el-table :data="filteredRawDatasets" row-key="file" border stripe>
-            <el-table-column prop="name" label="Resource Name" min-width="280">
+          <el-table class="resource-table" :data="filteredRawDatasets" row-key="file" border stripe>
+            <el-table-column prop="name" label="Resource Name" min-width="360">
               <template #default="scope">
                 <i>{{ scientificNameParts(scope.row.name)[0] }}</i
                 >{{ scientificNameParts(scope.row.name)[1] }}
               </template>
             </el-table-column>
-            <el-table-column prop="category" label="Data Type" min-width="160" />
-            <el-table-column prop="file" label="File Name" min-width="300"
+            <el-table-column prop="category" label="Data Type" width="150" />
+            <el-table-column prop="file" label="File Name" min-width="360"
               ><template #default="scope"
                 ><span class="resource-path">{{ scope.row.file }}</span></template
               ></el-table-column
             >
-            <el-table-column label="URL" width="150" align="center" fixed="right">
+            <el-table-column label="URL" width="140" align="center" fixed="right">
               <template #default="scope"
                 ><a
                   :href="scope.row.url"
@@ -701,21 +891,26 @@ const filteredDatasets = computed(() =>
           </el-table>
         </el-card>
         <el-card id="public-data" class="data-card" shadow="hover">
-          <template #header><div class="card-header">2. Public Data</div></template>
+          <template #header>
+            <div class="card-header">
+              <font-awesome-icon :icon="['fas', 'link']" class="icon-margin" />
+              <span>Public Data</span>
+            </div>
+          </template>
           <p class="resource-note">
-            Reference genomes and single-cell source publications for the nine study taxa.
-            <i>Aurelia coerulea</i> data from this study are included for reference. Links open
-            publications or database records.
+            Genome and reference-sequence resources, plus single-cell data sources, for nine study
+            taxa. Links lead to source publications or database records; the
+            <i>Aurelia coerulea</i> snRNA-seq entry links to this study's data deposit.
           </p>
-          <el-table :data="publicDataTable" row-key="species" border stripe>
-            <el-table-column prop="species" label="Species Code" width="120" />
-            <el-table-column prop="name" label="Species Name" min-width="250">
+          <el-table class="resource-table" :data="publicDataTable" row-key="species" border stripe>
+            <el-table-column prop="species" label="Species Code" width="110" />
+            <el-table-column prop="name" label="Species Name" min-width="300">
               <template #default="scope">
                 <i>{{ scientificNameParts(scope.row.name)[0] }}</i
                 >{{ scientificNameParts(scope.row.name)[1] }}
               </template>
             </el-table-column>
-            <el-table-column label="Genome / Reference Sequences" min-width="250"
+            <el-table-column label="Genome / Reference Sequences" min-width="280"
               ><template #default="scope"
                 ><a
                   :href="scope.row.genomeUrl"
@@ -741,23 +936,26 @@ const filteredDatasets = computed(() =>
             >
           </el-table>
         </el-card>
-        <el-card id="multi-omics" class="data-card" shadow="hover">
+        <el-card hidden id="multi-omics" class="data-card" shadow="hover">
           <template #header>
             <div class="card-header">
               <font-awesome-icon :icon="['fas', 'download']" class="icon-margin" />
-              <span>3. Multi-Omics Datasets</span>
+              <span>Multi-Omics Datasets</span>
             </div>
           </template>
 
           <p class="resource-note">
-            {{ amoaDatasetTable.length }} processed files across five collections:
-            <i>Aurelia</i> atlases, the integrated atlas archive, OG-level AnnData, OG-level RDS and
-            gene-level AnnData. OG denotes orthogroup. Select a category to browse the collection.
+            {{ amoaDatasetTable.length }} project files: <i>Aurelia</i> single-nucleus and spatial
+            atlases, genome annotations (GFF/GFF3), and nine-taxon expression datasets (H5AD/RDS),
+            protein sequences (FASTA), functional annotations (TSV), orthogroup mappings (CSV) and
+            an integrated atlas (TAR.GZ). OG denotes orthogroup. Select a category to view and
+            download individual files.
           </p>
           <div class="dataset-filter">
             <label id="dataset-category-label" for="dataset-category">Dataset category</label>
             <el-select
               id="dataset-category"
+              class="multi-omics-select"
               v-model="selectedCategory"
               aria-labelledby="dataset-category-label"
             >
@@ -769,20 +967,27 @@ const filteredDatasets = computed(() =>
               />
             </el-select>
           </div>
-          <el-table :data="filteredDatasets" row-key="file" border stripe style="width: 100%">
-            <el-table-column prop="name" label="Resource Name" min-width="280">
+          <el-table
+            class="resource-table"
+            :data="filteredDatasets"
+            row-key="file"
+            border
+            stripe
+            style="width: 100%"
+          >
+            <el-table-column prop="name" label="Resource Name" min-width="340">
               <template #default="scope">
                 <i>{{ scientificNameParts(scope.row.name)[0] }}</i
                 >{{ scientificNameParts(scope.row.name)[1] }}
               </template>
             </el-table-column>
-            <el-table-column prop="category" label="Category" min-width="180" />
-            <el-table-column prop="file" label="File Name / Path" min-width="340">
+            <el-table-column prop="category" label="Category" min-width="240" />
+            <el-table-column prop="file" label="File Name / Path" min-width="420">
               <template #default="scope">
                 <span class="resource-path">{{ scope.row.file }}</span>
               </template>
             </el-table-column>
-            <el-table-column label="Download" width="150" align="center" fixed="right">
+            <el-table-column label="Download" width="140" align="center" fixed="right">
               <template #default="scope">
                 <a
                   :download="scope.row.file.split('/').pop()"
@@ -799,17 +1004,17 @@ const filteredDatasets = computed(() =>
             </el-table-column>
           </el-table>
         </el-card>
-
         <el-card id="external-resources" class="data-card" shadow="hover">
           <template #header>
             <div class="card-header">
               <font-awesome-icon :icon="['fas', 'link']" class="icon-margin" />
-              <span>4. External Resources</span>
+              <span>External Resources</span>
             </div>
           </template>
           <p class="resource-note">
-            Databases and official software repositories supporting sequence annotation, comparative
-            genomics, single-cell and spatial analysis, and modeling in this project.
+            Databases and analysis tools used in this project, with a brief description of each
+            resource. Select Databases or Software tools to visit official resource pages and GitHub
+            repositories.
           </p>
           <div class="dataset-filter">
             <label id="external-category-label" for="external-category">Resource category</label>
@@ -826,11 +1031,17 @@ const filteredDatasets = computed(() =>
               />
             </el-select>
           </div>
-          <el-table :data="filteredExternalLinks" row-key="name" border stripe>
-            <el-table-column prop="category" label="Type" width="120" />
-            <el-table-column prop="name" label="Resource Name" min-width="230" />
-            <el-table-column prop="resource" label="Purpose" min-width="200" />
-            <el-table-column prop="url" label="URL" min-width="300">
+          <el-table
+            class="resource-table"
+            :data="filteredExternalLinks"
+            row-key="name"
+            border
+            stripe
+          >
+            <el-table-column prop="category" label="Type" width="110" />
+            <el-table-column prop="name" label="Resource Name" min-width="200" />
+            <el-table-column prop="resource" label="Purpose" min-width="320" />
+            <el-table-column prop="url" label="URL" min-width="420">
               <template #default="scope">
                 <a
                   :href="scope.row.url"
@@ -850,6 +1061,21 @@ const filteredDatasets = computed(() =>
 </template>
 
 <style scoped>
+/* Flexible text columns expand on wide screens and scroll within the table on narrow screens. */
+.resource-table {
+  width: 100%;
+}
+.resource-table :deep(.cell) {
+  padding: 0 12px;
+  line-height: 1.6;
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
+.resource-table :deep(.el-table__cell) {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
 /* Download controls remain usable for long file names and narrow screens. */
 .resource-note {
   margin: 0 0 20px;
@@ -867,6 +1093,9 @@ const filteredDatasets = computed(() =>
   width: 260px;
   max-width: 100%;
 }
+.dataset-filter .multi-omics-select {
+  width: 380px;
+}
 .resource-path,
 .resource-url {
   overflow-wrap: anywhere;
@@ -875,6 +1104,7 @@ const filteredDatasets = computed(() =>
   color: var(--el-color-primary);
 }
 .download-link {
+  white-space: nowrap;
   display: inline-flex;
   align-items: center;
   gap: 6px;
